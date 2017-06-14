@@ -1,0 +1,7 @@
+<h1>Edit API Posting</h1>
+<%= form_tag "/update/#{@company['id']}", method: :patch do %>
+Company Name: <input type="text" name = "name" value = "<%= @company["name"] %>"><br>
+Buzzword: <input type = "text" name = "buzzword" value = "<%= @company["buzzword"] %>" ><br>
+BS: <input type = "text" name = "bs" value = "<%= @company["bs"] %>"><br>
+<input type = "submit" value = "Submit">
+<% end %>

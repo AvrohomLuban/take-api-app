@@ -1,0 +1,5 @@
+Company Name: <%= @company.name %><br>
+Company Info: <%= @company.buzzword %><br>
+Slogan: <%= @company.bs %><br>
+
+<%= link_to "delete company", "/#{@company.id}", method: :delete %>
